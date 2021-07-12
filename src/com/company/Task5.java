@@ -7,10 +7,12 @@ public class Task5 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter how many numbers you want: ");
         int number = scanner.nextInt();
+        int[] numbers = new int[number];
         int count = 0;
-        for (int i = 0; i < number; i++) {
+        for (int i = 0; i < numbers.length; i++) {
             System.out.print("Enter a number: ");
-            if(scanner.nextInt() % 2 != 0) {
+            numbers[i] = scanner.nextInt();
+            if(numbers[i] % 2 != 0) {
                 count++;
             }
         }
