@@ -2,18 +2,18 @@ package com.company;
 
 public class Vehicle {
 
-    private int length;
+    private int lengthOfVehicle;
     private int numberOfSeats;
-    private int numberOfTears;
-    private String brand;
+    private int numberOfTires;
+    private String nameOfVehicle;
     private int currentSpeed;
 
-    public int getLength() {
-        return length;
+    public int getLengthOfVehicle() {
+        return lengthOfVehicle;
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    public void setLengthOfVehicle(int lengthOfVehicle) {
+        this.lengthOfVehicle = lengthOfVehicle;
     }
 
     public int getNumberOfSeats() {
@@ -24,20 +24,20 @@ public class Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public int getNumberOfTears() {
-        return numberOfTears;
+    public int getNumberOfTires() {
+        return numberOfTires;
     }
 
-    public void setNumberOfTears(int numberOfTears) {
-        this.numberOfTears = numberOfTears;
+    public void setNumberOfTires(int numberOfTires) {
+        this.numberOfTires = numberOfTires;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getNameOfVehicle() {
+        return nameOfVehicle;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setNameOfVehicle(String nameOfVehicle) {
+        this.nameOfVehicle = nameOfVehicle;
     }
 
     public int getCurrentSpeed() {
@@ -48,12 +48,12 @@ public class Vehicle {
         this.currentSpeed = currentSpeed;
     }
 
-    public int speedUp() {
-        return currentSpeed + 5;
+    public void speedUp() {
+        currentSpeed += 5;
     }
 
-    public int slowDown() {
-        return currentSpeed - 5;
+    public void slowDown() {
+        currentSpeed -= 5;
     }
 
     public void startEngine() {

@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] numbers = new int[10];
+        System.out.println("How many numbers do you want to enter? ");
+        int[] numbers = new int[scanner.nextInt()];
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Please enter number: ");
             numbers[i] = scanner.nextInt();
@@ -16,6 +17,6 @@ public class Task4 {
                 maximum = numbers[i];
             }
         }
-        System.out.println(maximum);
+        System.out.println("The maximum is: " + maximum);
     }
 }
